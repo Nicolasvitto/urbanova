@@ -14,12 +14,18 @@ body {
 /* Card de Login */
 .login-container {
     background: rgba(42, 42, 42, 0.85);
-    backdrop-filter: blur(10px);
     width: 380px;
     padding: 40px;
     border-radius: 16px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
     text-align: center;
+}
+
+@media (max-width: 480px) {
+    .login-container {
+        width: 90%;
+        padding: 30px 20px;
+    }
 }
 
 .login-title {
@@ -37,12 +43,19 @@ body {
 
 .input-group input {
     width: 100%;
-    padding: 14px 3px 20px 23px;
+    padding: 14px;
     background-color: #1a1a1a;
     border: 1px solid #444;
     border-radius: 8px;
     color: #e0e0e0;
     font-size: 14px;
+}
+
+@media (max-width: 480px) {
+    .input-group input {
+        font-size: 12px;
+        padding: 12px;
+    }
 }
 
 .input-group input::placeholder {
@@ -98,6 +111,13 @@ body {
     font-weight: 600;
     cursor: pointer;
     transition: background 0.3s ease;
+}
+
+@media (max-width: 480px) {
+    .login-button {
+        padding: 12px 0;
+        font-size: 14px;
+    }
 }
 
 .login-button:hover {
